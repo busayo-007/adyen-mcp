@@ -1,0 +1,15 @@
+node_modules
+.idea
+.DS_Store
+.bash_history
+.config/
+.docker/
+.npm/
+.ssh/
+.viminfo
+coverage/
+.env
+lib/
+build/
+dist/
+package-lock.json
