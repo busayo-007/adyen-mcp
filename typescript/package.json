@@ -10,7 +10,7 @@
     "mcp-server-adyen": "./dist/index.js"
   },
   "contributors": [
-    "Leonardo Galesky <leonardo.galesky@adyen.com>"
+    "Leonardo Galesky <devrel@adyen.com>"
   ],
   "scripts": {
     "build": "tsc",
