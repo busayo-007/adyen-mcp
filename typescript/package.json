@@ -1,0 +1,28 @@
+{
+  "name": "mcp-server-adyen",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Adyen",
+  "bin": {
+    "mcp-server-adyen": "./dist/index.js"
+  },
+  "contributors": [
+    "Leonardo Galesky <devrel@adyen.com>"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@adyen/api-library": "^16.0.2",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}
