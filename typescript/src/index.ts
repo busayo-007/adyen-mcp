@@ -33,7 +33,7 @@ async function main() {
       tool.name,
       tool.description,
       tool.arguments.shape,
-      async (args: any, _extra: RequestHandlerExtra) => {
+      async (args: any, _extra: RequestHandlerExtra <any, any>) => {
         const result = await tool.invoke(adyenClient, args);
         return {
           content: [
