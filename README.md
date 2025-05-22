@@ -10,13 +10,13 @@ We strongly encourage you to contribute to our repository. Find out more in our 
 To run to the MCP server via `npx` you can execute:
 
 ```
-npx -y @adyen/mcp --tools=all --apikey=<YOUR-ADYEN-API-KEY> --env=<TEST|LIVE>
+npx -y @adyen/mcp --tools=all --adyenApiKey=YOUR_ADYEN_API_KEY --env=TEST
 ```
 
-Optionally, if the environment is LIVE then you must also provide your Merchant URL , for example:
+Optionally, if the environment is LIVE then you must also provide your Merchant URL, for example:
 
 ```
-npx -y @adyen/mcp --apikey=<YOUR-ADYEN-API-KEY> --env=LIVE --prefixurl=<YOUR-PREFIX-URL>
+npx -y @adyen/mcp --adyenApiKey=YOUR_ADYEN_API_KEY --env=LIVE --prefixurl=YOUR_PREFIX_URL
 ```
 
 To run the server, you need a webservice user with the following roles: 
