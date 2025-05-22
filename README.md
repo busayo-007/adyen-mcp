@@ -29,7 +29,7 @@ Adyen recommends creating a new webservice user and generating a new API key for
 Only use the new user’s API key for the MCP application and limit the roles to match the tools you will be using. 
 
 ### Support
-If you have a feature request, or spotted a bug or a technical problem, create a GitHub issue. For other questions, contact our Support Team via Customer Area or via email: support@adyen.com
+If you have a feature request, or spotted a bug or a technical problem, create a GitHub issue. For other questions, contact: devrel@adyen.com
 
 ### License
 MIT license. For more information, see the LICENSE file.
