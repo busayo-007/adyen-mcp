@@ -1,5 +1,5 @@
 {
-  "name": "mcp-server-adyen",
+  "name": "@adyen/mcp",
   "version": "0.1.0",
   "main": "dist/index.js",
   "engines": {
@@ -7,7 +7,7 @@
   },
   "author": "Adyen",
   "bin": {
-    "mcp-server-adyen": "./dist/index.js"
+    "@adyen/mcp": "./dist/index.js"
   },
   "contributors": [
     "Leonardo Galesky <devrel@adyen.com>"
