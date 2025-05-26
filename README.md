@@ -67,7 +67,7 @@ Create a payment link of 42 euros with my merchant account
 ```
 
 ```
-List me my merchant accounts
+List my merchant accounts
 ```
 
 
