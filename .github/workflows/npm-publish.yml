@@ -25,4 +25,4 @@ jobs:
           cd typescript
           npm install
           npm run build
-          npm publish --access restricted
+          npm publish --access public
