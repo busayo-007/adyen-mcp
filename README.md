@@ -18,7 +18,7 @@ The [Adyen Model Context Protocol (MCP) server](https://docs.adyen.com/developme
 
 
 ### Usage
-1. Run to the MCP server via `npx`, command:
+* Run to the MCP server via `npx`, command:
 
 ```
 npx -y @adyen/mcp --adyenApiKey=YOUR_ADYEN_API_KEY --env=TEST
@@ -29,9 +29,6 @@ _Optionally_, if the environment is LIVE then you must also provide your Merchan
 ```
 npx -y @adyen/mcp --adyenApiKey=YOUR_ADYEN_API_KEY --env=LIVE --livePrefix=YOUR_PREFIX_URL
 ```
-
-2. Chat with the MCP server (in `Agent` mode) to allow it to perform actions.
-   * _Note:_ You'll have to confirm the action after your prompt.
 
 
 Example usage in `.vscode`:
