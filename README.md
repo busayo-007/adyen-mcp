@@ -1,6 +1,6 @@
 ## Adyen MCP Server
 
-The [Adyen Model Context Protocol (MCP) server](https://docs.adyen.com/development-resources/mcp-server/) allows you to integrate with Adyen APIs through LLMs function calling utilizing various Clients. It currently supports the following tools.
+The [Adyen Model Context Protocol (MCP) server](https://docs.adyen.com/development-resources/mcp-server/) allows you to integrate with Adyen APIs through LLMs function calling utilizing various Clients. It currently supports the following tools. Read more on our [Blog - Part 1](https://www.adyen.com/knowledge-hub/mcp-release).
 
 1. CheckoutAPI - Sessions
    - Create a /sessions payment request
@@ -56,9 +56,6 @@ Example usage in `.vscode`:
 Adyen recommends creating a new webservice user and generating a new API key for the purpose of this application.
 Only use the new user’s API key for the MCP application and limit the roles to match the tools you'll be using. 
 
-
-### Read more
-- Read more on our [Blog - Part 1](https://www.adyen.com/knowledge-hub/mcp-release).
 
 
 ### License
