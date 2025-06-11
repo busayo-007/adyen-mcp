@@ -33,7 +33,7 @@ export const CREATE_PAYMENT_SESSION_DESCRIPTION = `Creates a payment session for
                 "value": 2500,
                 "currency": "EUR"
                 "reference": "YOUR_UNIQUE_PAYMENT_REFERENCE",
-                "returnUrl": "https://your-company.com/checkout?shopperOrder=12xy",
+                "returnUrl": "https://your-company.example.com/checkout?shopperOrder=12xy",
             }
         )
         # Returns the raw API response with encrypted session data. Check webhooks for authorisation status.`;
