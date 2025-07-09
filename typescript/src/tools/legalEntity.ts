@@ -1,17 +1,15 @@
-// typescript/src/tools/legalEntity.ts
+// src/tools/legalEntity.ts
 import { z } from "zod";
-import { Client, LegalEntityManagement } from "@adyen/api-library";
+import { Client, LegalEntityManagementAPI } from "@adyen/api-library";
 import { Tool } from "./types";
 
 export const listPciQuestionnairesTool: Tool = {
   name: "listPCIQuestionnaires",
-  description: "List signed PCI questionnaires for a given legal entity ID",
+  description: "List PCI questionnaires for a given legal entity ID",
   arguments: z.object({ id: z.string() }).strict(),
   invoke: async (adyenClient: Client, { id }) => {
-    const lem = new LegalEntityManagement(adyenClient);
-    // v2 list endpoint
-    const response = await lem.listPCIQuestionnaires({ id });
-    return response;
+    const lem = new LegalEntityManagementAPI(adyenClient);
+    return await lem.PCIQuestionnairesApi.getPciQuestionnaireDetails(id);
   },
 };
 
@@ -19,15 +17,10 @@ export const getPciQuestionnaireTool: Tool = {
   name: "getPCIQuestionnaire",
   description: "Retrieve a signed PCI questionnaire by its ID for a given legal entity",
   arguments: z
-    .object({ id: z.string(), pciQuestionnaireId: z.string() })
+    .object({ id: z.string(), pciid: z.string() })
     .strict(),
-  invoke: async (adyenClient: Client, { id, pciQuestionnaireId }) => {
-    const lem = new LegalEntityManagement(adyenClient);
-    // v3 get single endpoint
-    const response = await lem.getPCIQuestionnaire({
-      id,
-      pciQuestionnaireId,
-    });
-    return response;
+  invoke: async (adyenClient: Client, { id, pciid }) => {
+    const lem = new LegalEntityManagementAPI(adyenClient);
+    return await lem.PCIQuestionnairesApi.getPciQuestionnaire(id, pciid);
   },
 };
