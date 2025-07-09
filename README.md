@@ -15,6 +15,9 @@ The [Adyen Model Context Protocol (MCP) server](https://docs.adyen.com/developme
    - Refunds a captured payment
 5. Management API
    - Gets a list of merchant accounts for your company account
+   - List PCI questionnaires for a given entity
+   - Get a specific PCI questionnaire
+
 
 
 ### Usage
